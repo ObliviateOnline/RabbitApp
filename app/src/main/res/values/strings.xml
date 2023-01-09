@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RabbitApp</string>
+    <string name="search_rabbit">Search Rabbit!</string>
+</resources>
