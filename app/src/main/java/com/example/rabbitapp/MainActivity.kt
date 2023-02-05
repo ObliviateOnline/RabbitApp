@@ -1,5 +1,6 @@
 package com.example.rabbitapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
@@ -40,6 +41,11 @@ class MainActivity : AppCompatActivity() {
                 binding.tvName.text = getModel<SimpleModel>().name
             }
         }.models = getData()
+
+        binding.runGif.setOnClickListener {
+            val intent = Intent(this, WebViewTest::class.java)
+            startActivity(intent)
+        }
 
     }
 
